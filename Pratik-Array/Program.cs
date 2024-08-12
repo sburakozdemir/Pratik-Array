@@ -1,22 +1,18 @@
 ﻿using System;
 using System.Linq;
 
+using System;
+using System.Linq;
+
 class Program
 {
     static void Main()
     {
         // 1. 10 adet tam sayı verisi alacak bir dizi tanımlayınız.
-        int[] dizi = new int[10];
+        int[] dizi = new int[10] { 5, 8, 2, 14, 9, 3, 7, 1, 12, 6 };
 
-        // 2. Bu dizinin elemanlarını bir for döngüsü ile doldurup, foreach döngüsü ile tekrar ekrana yazınız.
-        Console.WriteLine("Lütfen 10 adet tam sayı giriniz:");
-        for (int i = 0; i < dizi.Length; i++)
-        {
-            Console.Write($"{i + 1}. sayı: ");
-            dizi[i] = Convert.ToInt32(Console.ReadLine());
-        }
-
-        Console.WriteLine("\nGirdiğiniz sayılar:");
+        // 2. Bu dizinin elemanlarını foreach döngüsü ile ekrana yazınız.
+        Console.WriteLine("Dizinin elemanları:");
         foreach (int sayi in dizi)
         {
             Console.WriteLine(sayi);
